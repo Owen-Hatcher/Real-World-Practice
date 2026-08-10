@@ -21,16 +21,42 @@
                 <div class="nav__links">
                     <a href="#" class="nav__link" >About</a>
                     <a href="#" class="nav__link" >Blog</a>
-                    <a href="#" class="nav__link" >Pricing</a>
+                    <a href="#pricing" class="nav__link" >Pricing</a>
                     <a href="#" class="nav__link" >Contact Us</a>
                     <a href="#" class="nav__link login" >login</a>
                     <button class="sign-up__button">
                         <a href="#" class="sign-up">Sign Up</a>
                     </button>
                 </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="btn__menu--svg">
+                       <a href=""><i class=" btn__menu fa-solid fa-grip"></i></a>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
+
+<div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__links">
+                <a class="modal__link">About</a>
+                <a class="modal__link">Blog</a>
+                <a class="modal__link">Pricing</a>
+                <a class="modal__link">Contact Us</a>
+                <a class="modal__link">Login</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
+            </div>
+        </div>
 
     <header>
         <div class="container">
@@ -138,7 +164,7 @@
                             <img class="item__img" src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="">
                             <div class="item__text">
                                 <div class="feature__item__title">
-                                    Easy
+                                    Easy 
                                 </div>
                                 <div class="gray">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias enim non quis fuga eligendi at maiores.
@@ -218,14 +244,6 @@
     <section id="pricing">
         <div class="container">
             <div class="row">
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing">
-        <div class="container">
-            <div class="row">
                 <div class="pricing__desc">
                     <div class="section__tag">PRICING</div>
                     <div class="section__title">Reasonable & Flexible <span class="purple">Plans.</span></div>
@@ -234,8 +252,8 @@
                     </div>
                 </div>
                 <div class="plans">
-                    <div class="plan">
-                        <div class="plan__section box__1">
+                    <div class="plan box__1">
+                        <div class="plan__section">
                             <div class="plan__title">PEARSONAL</div>
                             <div class="plan__price">$17.99</div>
                             <div class="plan__subtitle">Monthly</div>
@@ -319,13 +337,13 @@
             </div>
             <div class="footer__section">
                 <div class="footer__title">
-                    Main
+                    Product
                 </div>
                 <ul class="footer__links">
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">FAQs</a></li>
-                    <li><a href="">Support</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Pearsonal</a></li>
+                    <li><a href="">Buisness</a></li>
+                    <li><a href="">Team</a></li>
                 </ul>
             </div>
             <div class="footer__section">
