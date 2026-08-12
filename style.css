@@ -34,6 +34,7 @@ body {
     margin-bottom: 20px;
     font-size: 40px;
     font-weight: 900;
+    color: rgb(36, 62, 99)
 }
 
 .row {
@@ -454,6 +455,49 @@ STEPS
 
 /* 
 
+VALUES 
+
+*/
+
+.values__img {
+    width: 100%;
+    margin: 20px;
+}
+
+.values__list {
+    display: flex;
+}
+
+.value__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.value__img--1 {
+    font-size: 32px;
+    margin-right: 16px;
+    color: rgb(0, 128, 0);
+}
+.value__img--2 {
+    font-size: 32px;
+    margin-right: 16px;
+    color:  rgba(248, 120, 74, 0.87);
+}
+
+.value__subtitle {
+    color: gray;
+    line-height: 1.5;
+    margin: 16px 0;
+    margin-right: 16px;
+}
+
+.value {
+    margin: 24px 0;
+}
+
+/* 
+
 PRICING
 
 */
@@ -538,6 +582,110 @@ PRICING
     font-weight: 500;
 }
 
+
+ /* 
+    
+ TESTIMONIALS
+    
+*/
+
+.testimonial__rating {
+    padding-top: 24px;
+    font-size: 18px;
+    color: gold;
+}
+
+.testimonial__title {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.testimonial__desc {
+    line-height: 1.5;
+}
+
+.testimonial__bottom{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.testimonial__img--container {
+    padding-right: 16px;
+}
+
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial__name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.testimonial__role {
+    color: gray;
+}
+
+/* 
+
+START
+
+*/
+
+#start .container {
+    background-color: #6415ff;
+    border-radius: 16px;
+}
+
+.start__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+}
+
+.start__para {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    max-width: 480px;
+}
+
+.buttons {
+    display: flex;
+    max-width: 480px;
+}
+
+.start__button {
+    padding: 24px 40px;
+    background-color: orange;
+    border-radius: 32px;
+    color: white;
+    font-weight: 700;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.contact__button {
+    padding: 24px 40px;
+    border: solid 1px whitesmoke;
+    border-radius: 32px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 /* 
 
 FOOTER 
@@ -595,12 +743,24 @@ footer {
     margin-right: 16px;
 }
 
-.icons {
-
-}
-
 .icon {
     padding: 0 8px;
+}
+
+.testimonial__arrows {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #6415ff;
+    cursor: pointer;
+}
+
+.divider {
+    margin: 0 8px;
+    width: 1px;
+    height: 24px;
+    background: rgb(222, 226, 230);
+    cursor: default;
 }
 
 
