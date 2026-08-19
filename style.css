@@ -290,6 +290,7 @@ HEADER
 }
 
 .about__img__container {
+    margin-left: 40px;
     display: flex;
     width: 60%;
 }
