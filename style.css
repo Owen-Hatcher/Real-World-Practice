@@ -32,7 +32,7 @@ body {
 .section__title {
     margin-top: 8px;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 900;
     color: rgb(36, 62, 99)
 }
@@ -59,12 +59,14 @@ body {
 
 .section__subtitle {
     color: gray;
-    line-height: 2;
+    line-height: 1.5;
+    font-size: 18px;
 }
 
 .gray {
     color: gray;
     line-height: 2;
+    font-size: 12px;
 }
 
 section {
@@ -90,7 +92,7 @@ h1 h2 h3 h4 h5 h6 {
 
 p {
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /* 
@@ -259,7 +261,7 @@ NAV
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* 
@@ -308,6 +310,7 @@ HEADER
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.15);
     border-radius: 32px;
+    overflow: hidden;
     
 }
 
@@ -315,11 +318,24 @@ HEADER
     background-color: #6415ff;
     border-color: #6415ff;
     color: #fff;
-    padding: 16px 40px;
+    padding: 14px 40px;
     border-radius: 24px;
     font-size: 16px;
     cursor: pointer;
     margin: 8px;
+}
+
+.btn__email {
+    z-index: 2;
+    margin: 8px;
+    height: 54px;
+    border-radius: 500px;
+    width: 250px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .btn:hover {
@@ -327,12 +343,19 @@ HEADER
     border-color: #4811b6;
     transition: all 500ms ease;
 }
+.btn__email:hover {
+    background-color:#4811b6 ;
+    border-color: #4811b6;
+    transition: all 500ms ease;
+}
 
 .input__emial {
+    width: 100%;
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
     font-size: 16px;
+    font-weight: 500;
     border: none;
-    padding: 16px;
-    margin: 10px;
 }
 
 /*
@@ -413,8 +436,8 @@ QUALITY
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 40px;
+    justify-content: space-between;
+    margin-right: 24px;
 }
 
 .quality__img--container {
@@ -426,7 +449,7 @@ QUALITY
 
 .quality__subtitle {
     color: gray;
-    line-height: 1.5;
+    line-height: 2;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -533,6 +556,8 @@ VALUES
 .value {
     margin: 24px 0;
 }
+
+
 
 /* 
 
@@ -660,8 +685,16 @@ PRICING
     
 */
 
+.testimonial {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0  auto;
+    display: flex;
+    padding: 0 20px;
+}
+
 .testimonial__rating {
-    padding-top: 24px;
+    margin-top: 40px;
     font-size: 18px;
     color: gold;
 }
@@ -882,30 +915,18 @@ PHONE
     .btn__menu {
         display: block;
     }
+
     header .row {
         flex-direction: column;
-        align-items: center;
+        align-i
+        tems: center;
     }
     footer {
         padding: 80px 32px;
     }
+
     .nav__links {
         display: none;
-    }
-
-    .about__img__container {
-        display: none;
-        position: absolute;
-    }
-
-    .about {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about__para {
-        width: 70%;
-        padding: 24px;
     }
 
     .get__started {
@@ -913,50 +934,54 @@ PHONE
     }
 
     .btn {
-        padding: 8px 32px;
+        padding: 12px 32px;
         border-radius: 24px;
-        font-size: 12px;
-        margin: 8px;
+        font-size: 14px;
+        margin: 48px 8px;
     }
 
-    .input__emial {
-        font-size: 12px;
-        padding: 16px;
-        margin: 8px;
+    .start__box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    
+    .start__para {
+        margin: 24px 0;
+    }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 768px) {
 
-    .quality__img--container {
-        display: none;
-        position: absolute;
+    .about {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .about__para {
+        width: 100%;
+    }
+
+    .about__img__container {
+        width: 100%;
+    }
+
 
     .quality__desc {
         align-items: center;
         width: 90%;
         text-align: center;
+        margin: 0;
     }
 
     .quality {
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
-    .steps__img--container {
-        display: none;
-        position: absolute;
-    }
-
-    .steps__desc {
-        align-items: center;
-        width: 90%;
-        text-align: center;
-    }
 
     .steps {
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -964,16 +989,17 @@ PHONE
     .plans {
     flex-direction: column;
     align-items: center;
-  }
+    }
 
-  .plan {
-    width: 100%;
-    max-width: 400px;
-  }
+    .plan {
+        width: 100%;
+        max-width: 400px;
+    }
 
-}
+    .values__img--container .values__img {
+        width: 100%;
+    }
 
-@media(max-width: 768px) {
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
@@ -990,12 +1016,76 @@ PHONE
     .container {
         padding: 3vw 0;
     }
-}
 
-@media(max-width: 640px) {
+    .feature__items {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .feature__item {
+        width: 70%;
+    }
+
+    .quality__img--container {
+        width: 80%;
+        
+    }
+
+    .steps__img--container {
+        width: 80%;
+        margin: 32px 0;
+    }
+
+    .steps__desc {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .step__box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section__desc {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .values__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .value {
+        width: 70%;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .testimonial__bottom {
+        width: 80%;
+    }
+
     .container {
         padding: 80px 0;
     }
+}
+
+@media(max-width: 640px) {
+    
     .nav__logo {
         margin: 8px 0;
         padding-bottom: 4px;
@@ -1011,30 +1101,13 @@ PHONE
     .feature__item__title {
         font-size: 16px;
     }
-
-    .section__title {
-        font-size: 24px;
-    }
-
-    .section__tag {
-        font-size: 12px;
-    }
 }
 
 @media(max-width: 520px) {
-    .gray {
-        text-align: center;
-        line-height: 1.5;
-    }
-
-    .item__img {
-        display: none;
-    }
 
     .feature__item__title {
         text-align: center;
     }
-
 
     .item__text {
         border: solid 2px #6415ff;
