@@ -312,6 +312,7 @@ HEADER
     border-color: rgba(0, 0, 0, 0.15);
     border-radius: 32px;
     overflow: hidden;
+    width: 90%;
     
 }
 
@@ -357,6 +358,20 @@ HEADER
     font-size: 16px;
     font-weight: 500;
     border: none;
+}
+
+.btn__email--mobile {
+    display: none;
+    z-index: 2;
+    margin: 8px;
+    height: 59px;
+    border-radius: 500px;
+    width: 90%;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 /*
@@ -865,6 +880,11 @@ footer {
     margin-top: 40px;
 }
 
+.footer__section {
+    margin: 24px;
+    max-width:;
+}
+
 .footer__end {
     display: flex;
     align-items: center;
@@ -1117,6 +1137,21 @@ PHONE
 
     .feature__item__title {
         font-size: 16px;
+    }
+
+    .btn__email--mobile {
+        display: block;
+    }
+    .btn__email {
+        display: none;
+    }
+
+    .footer__sections {
+        flex-wrap: wrap;
+    }
+
+    .input__emial {
+        padding-right: 32px;
     }
 }
 
